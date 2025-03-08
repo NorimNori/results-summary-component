@@ -2,8 +2,8 @@ import Score from "../score/index"
 
 const Result = () => {
   return (
-    <section className="result">
-      <h2 className="result__title">Your Result</h2>
+    <section className="result" aria-labelledby="result-title">
+      <h2 id="result-title" className="result__title">Your Result</h2>
       <Score />
       <strong className="result__label">Great</strong>
       <p className="result__description">
