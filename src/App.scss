@@ -1,1 +1,5 @@
+@use '@/styles/mixins.scss';
 
+main {
+    @include mixins.center-grid
+}

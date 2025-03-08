@@ -1,7 +1,9 @@
 
 const Button = () => {
   return (
-    <div>Button</div>
+    <button className="summary__button">
+      Continue
+    </button>
   )
 }
 
