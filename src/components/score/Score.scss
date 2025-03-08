@@ -1,0 +1,25 @@
+@use '@/styles/colors.scss';
+@use '@/styles/mixins.scss';
+
+.result__score {
+    width: 9.5em;
+    height: 9.5em;
+    padding: 1em;
+    border-radius: 50%;
+    font-size: .85rem;
+    font-weight: 500;
+    margin: 1.3em 0;
+    color: rgba(colors.$white, 50%);
+    @include mixins.center-grid;
+    background: linear-gradient(   
+    mix(colors.$violetBlue,rgba(black, .6)) 5%, 
+    rgba(colors.$persianBlue, .4) 80%, 
+    mix(rgba(colors.$violetBlue, .1),rgba(colors.$persianBlue, .1)) 100%
+  );
+}
+
+.result__number {
+    font-size: 4rem;
+    color: colors.$white;
+    margin-bottom: -.2em;
+}

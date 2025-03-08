@@ -1,0 +1,30 @@
+@use '@/styles/colors.scss';
+@use '@/styles/mixins.scss';
+
+.result{
+    height: 80%;
+    line-height: 1.5;
+    padding: 1.5em 0 4.3em;
+    color: colors.$white;
+    border-radius: 0 0 25px 25px;
+    @include mixins.center-grid;
+    background-image: linear-gradient(colors.$lightSlateBlue, colors.$lightRoyalBlue);
+
+    &__title {
+        font-size: 1rem;
+        font-weight: 800
+    }
+
+    &__label {
+        font-size: 1.3rem;
+        font-weight: 800;
+    }
+
+    &__description {
+        text-align: center;
+        font-size: .87rem;
+        font-weight: 500;
+        letter-spacing: .03em;
+        padding: .5em 4em;
+    }
+}

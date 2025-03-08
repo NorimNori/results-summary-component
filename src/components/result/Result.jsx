@@ -1,4 +1,5 @@
 import Score from "../score/index"
+import './Result.scss'
 
 const Result = () => {
   return (
@@ -7,7 +8,7 @@ const Result = () => {
       <Score />
       <strong className="result__label">Great</strong>
       <p className="result__description">
-        You scored higher than <span className="result__percentage">65%</span> of the people who have taken these tests.
+        You scored higher than 65% of the people who have taken these tests.
       </p>
     </section>
   )

@@ -1,5 +1,4 @@
-@use '@/styles/mixins.scss';
-
 main {
-    @include mixins.center-grid
+    display: grid;
+    height: 100vh;
 }
