@@ -2,11 +2,10 @@
 @use '@/styles/mixins.scss';
 
 .result{
-    height: 80%;
     line-height: 1.5;
-    padding: 1.5em 0 4.3em;
+    padding: 1.5em 0 1.3em;
     color: colors.$white;
-    border-radius: 0 0 25px 25px;
+    border-radius: 0 0 30px 30px;
     @include mixins.center-grid;
     background-image: linear-gradient(colors.$lightSlateBlue, colors.$lightRoyalBlue);
 

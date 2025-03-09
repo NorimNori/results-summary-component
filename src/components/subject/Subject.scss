@@ -1,0 +1,53 @@
+@use '@/styles/colors.scss';
+
+.Reaction {
+    color: colors.$lightRed;
+    background-color: rgba(colors.$lightRed, .06);
+}
+
+.Memory {
+    color: colors.$onrangeyYellow;
+    background-color: rgba(colors.$onrangeyYellow, .06);
+}
+
+.Verbal {
+    color: colors.$greenTeal;
+    background-color: rgba(colors.$greenTeal, .06);
+}
+
+.Visual {
+    color: colors.$cobaltBlue;
+    background-color: rgba(colors.$cobaltBlue, .06);
+}
+
+.subject {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.1em;
+    margin-bottom: 1.2em;
+    border-radius: 10px;
+
+    font-size: .8rem;
+    font-weight: 400;
+
+    &__title-container {
+        display: flex;
+        gap: .8rem;
+    }
+
+    &__title {
+        display: flex;
+        align-items: center;
+    }
+
+    &__score {
+        font-size: 1rem;
+        font-weight: 900;
+        color: rgba(colors.$darkGrayBlue, .6);
+    }
+
+    &__score--value {
+        color: black;
+    }
+}

@@ -1,0 +1,11 @@
+@use '@/styles/colors.scss';
+
+.summary__button {
+    border: none;
+    width: 100%;
+    padding: 1em;
+    border-radius: 20px;
+    font-weight: 800;
+    color: colors.$white;
+    background-color: colors.$darkGrayBlue;
+}
