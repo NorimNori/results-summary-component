@@ -3,6 +3,7 @@
 .summary__button {
     border: none;
     width: 100%;
+    cursor: pointer;
     padding: 1.2em;
     margin-top: clamp(0.4rem, 0.242rem + 0.676vw, 0.85rem);
     border-radius: 25px;
@@ -10,5 +11,18 @@
     letter-spacing: .035em;
     font-weight: 800;
     color: colors.$white;
-    background-color: colors.$darkGrayBlue;
+    background: colors.$darkGrayBlue;  
+    background-image: linear-gradient(to bottom, colors.$violetBlue, colors.$persianBlue);
+    background-size: 0% 100%;
+    background-repeat: no-repeat;
+    background-position: left;
+    transition: background-size 0.3s ease-in-out;
+
+    &:hover {
+        background-size: 100% 100%;
+    }
+
+    &:active {
+        transform: scale(0.98);
+    }
 }
