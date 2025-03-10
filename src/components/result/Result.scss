@@ -2,8 +2,9 @@
 @use '@/styles/mixins.scss';
 
 .result{
+    gap: 1em;
     line-height: 1.5;
-    padding: 1.5em 0 1.3em;
+    padding: 1.6em 0 1.8em;
     color: colors.$white;
     border-radius: 0 0 30px 30px;
     @include mixins.center-grid;
@@ -11,18 +12,21 @@
 
     &__title {
         font-size: clamp(1rem, 0.93rem + 0.3vw, 1.2rem);
+        color: colors.$lightLavender;
         font-weight: 800
     }
 
     &__label {
-        font-size: clamp(1.3rem, 1.23rem + 0.3vw, 1.5rem);
+        font-size: clamp(1.3rem, 1.194rem + 0.451vw, 1.6rem);
+        margin-bottom: -.6em;
         font-weight: 800;
     }
 
     &__description {
         text-align: center;
         font-size: clamp(0.87rem, 0.842rem + 0.12vw, 0.95rem);
-        font-weight: 500;
+        color: colors.$lightLavender;
+        font-weight: 00;
         letter-spacing: .03em;
         padding: .5em 4em;
     }
@@ -31,6 +35,10 @@
 @media (min-width: 1024px) {
     .result {
         border-radius: 25px;
+
+        &__label {
+            margin-bottom: -1.7em;
+        }
     }
   }
   

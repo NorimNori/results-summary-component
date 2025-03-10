@@ -9,7 +9,7 @@
     border-radius: 50%;
     font-size: clamp(0.85rem, 0.762rem + 0.376vw, 1.1rem);
     font-weight: 500;
-    margin: .55em 0;
+    margin: .5em 0;
     color: rgba(colors.$white, 50%);
     @include mixins.center-grid;
     background: linear-gradient(   
@@ -20,7 +20,19 @@
 }
 
 .result__number {
-    font-size: clamp(4rem, 3.93rem + 0.3vw, 4.2rem);
+    font-size: clamp(4rem, 3.894rem + 0.451vw, 4.3rem);
     color: colors.$white;
-    margin-bottom: -.5em;
+    margin-bottom: -.2em;
+}
+
+@media (min-width: 1024px) {
+  .result__score {
+    width: 10.7em;
+    height: 10.7em;
+    margin: -.7em;
+  }
+
+  .result__number {
+    margin-bottom: -.7em;
+  }
 }
