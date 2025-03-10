@@ -1,19 +1,38 @@
+@use '@/styles/colors.scss';
+
 .summary {
     width: 100%;
-    padding: 2rem;
+    padding: 2em;
     display: flex;
     flex-direction: column;
     align-items: start;
-    gap: 1rem;
+    gap: 1.6rem;
+    background-color: colors.$white;
 
     &__title {
-        font-size: 1.2rem;
+        font-size: clamp(1.2rem, 1.147rem + 0.225vw, 1.35rem);
     }
 
     &__list {
+        display: flex;
+        flex-direction: column;
+        gap: 1.2rem;
         width: 100%;
         list-style: none;
         margin: 0;
         padding: 0;
     }
 }
+
+@media (min-width: 1024px) {
+    .summary {
+        border-radius: 0 25px 25px 0;
+        padding: 2.3em;
+        justify-content: space-between;
+
+        &::before {
+            background-color: red;
+        }
+    }
+  }
+  

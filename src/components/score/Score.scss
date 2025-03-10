@@ -7,7 +7,7 @@
     height: 9.5em;
     padding: 1em;
     border-radius: 50%;
-    font-size: .85rem;
+    font-size: clamp(0.85rem, 0.762rem + 0.376vw, 1.1rem);
     font-weight: 500;
     margin: .55em 0;
     color: rgba(colors.$white, 50%);
@@ -20,7 +20,7 @@
 }
 
 .result__number {
-    font-size: 4rem;
+    font-size: clamp(4rem, 3.93rem + 0.3vw, 4.2rem);
     color: colors.$white;
-    margin-bottom: -.2em;
+    margin-bottom: -.5em;
 }

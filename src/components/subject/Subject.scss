@@ -25,10 +25,9 @@
     justify-content: space-between;
     align-items: center;
     padding: 1.1em;
-    margin-bottom: 1.2em;
     border-radius: 10px;
 
-    font-size: .8rem;
+    font-size: clamp(0.8rem, 0.765rem + 0.15vw, 0.9rem);
     font-weight: 400;
 
     &__title-container {
